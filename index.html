@@ -7,7 +7,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="CRM Pro">
-  <title>CRM Pro - إدارة العملاء</title>
+  <title>CRM Pro - تسجيل الدخول</title>
   <link rel="manifest" href="manifest.json">
   <link rel="apple-touch-icon" href="icon-192.png">
   <style>
@@ -22,14 +22,13 @@
       align-items: center;
       justify-content: center;
       padding: 20px;
-      overflow-x: hidden;
     }
 
     .container {
       text-align: center;
       max-width: 400px;
       width: 100%;
-      animation: fadeIn 1s ease;
+      animation: fadeIn 0.8s ease;
     }
 
     @keyframes fadeIn {
@@ -38,46 +37,159 @@
     }
 
     .logo {
-      width: 120px;
-      height: 120px;
+      width: 100px;
+      height: 100px;
       background: rgba(255,255,255,0.1);
       backdrop-filter: blur(20px);
-      border-radius: 32px;
+      border-radius: 28px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 56px;
-      margin: 0 auto 30px;
+      font-size: 48px;
+      margin: 0 auto 24px;
       border: 2px solid rgba(255,255,255,0.2);
-      box-shadow: 0 20px 60px rgba(0,0,0,0.3), 0 0 100px rgba(37,99,235,0.2);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
       animation: float 3s ease-in-out infinite;
     }
 
     @keyframes float {
       0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-15px); }
+      50% { transform: translateY(-12px); }
     }
 
     h1 {
       color: white;
-      font-size: 36px;
+      font-size: 32px;
       font-weight: 800;
-      margin-bottom: 10px;
-      letter-spacing: 1px;
+      margin-bottom: 8px;
     }
 
     .subtitle {
-      color: rgba(255,255,255,0.7);
-      font-size: 16px;
+      color: rgba(255,255,255,0.6);
+      font-size: 14px;
       margin-bottom: 40px;
-      font-weight: 400;
+    }
+
+    /* ===== Login Form ===== */
+    .login-box {
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(20px);
+      border-radius: 24px;
+      padding: 32px;
+      border: 1px solid rgba(255,255,255,0.1);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+      text-align: right;
+    }
+
+    .input-group label {
+      display: block;
+      color: rgba(255,255,255,0.8);
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 14px 16px;
+      border-radius: 14px;
+      border: 2px solid rgba(255,255,255,0.15);
+      background: rgba(255,255,255,0.05);
+      color: white;
+      font-size: 16px;
+      font-family: 'Cairo', sans-serif;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+
+    .input-group input:focus {
+      border-color: rgba(255,255,255,0.4);
+      background: rgba(255,255,255,0.1);
+    }
+
+    .input-group input::placeholder {
+      color: rgba(255,255,255,0.3);
+    }
+
+    .btn-login {
+      width: 100%;
+      padding: 16px;
+      border-radius: 14px;
+      border: none;
+      background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+      color: #1e3a8a;
+      font-size: 16px;
+      font-weight: 700;
+      font-family: 'Cairo', sans-serif;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    .btn-login:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    }
+
+    .btn-login:active {
+      transform: translateY(0) scale(0.98);
+    }
+
+    .error-msg {
+      color: #ef4444;
+      font-size: 13px;
+      margin-top: 12px;
+      display: none;
+      font-weight: 600;
+      background: rgba(239,68,68,0.1);
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .error-msg.show { display: block; }
+
+    .lock-icon {
+      font-size: 40px;
+      margin-bottom: 16px;
+    }
+
+    .footer {
+      margin-top: 30px;
+      color: rgba(255,255,255,0.3);
+      font-size: 12px;
+    }
+
+    /* ===== Dashboard (بعد الدخول) ===== */
+    .dashboard {
+      display: none;
+      animation: fadeIn 0.5s ease;
+    }
+
+    .dashboard.show { display: block; }
+
+    .welcome {
+      color: white;
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .welcome-sub {
+      color: rgba(255,255,255,0.6);
+      font-size: 14px;
+      margin-bottom: 30px;
     }
 
     .features {
       display: flex;
       flex-direction: column;
       gap: 12px;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
 
     .feature {
@@ -89,12 +201,6 @@
       align-items: center;
       gap: 12px;
       border: 1px solid rgba(255,255,255,0.1);
-      transition: all 0.3s ease;
-    }
-
-    .feature:hover {
-      background: rgba(255,255,255,0.12);
-      transform: translateX(-5px);
     }
 
     .feature-icon {
@@ -108,221 +214,191 @@
       border-radius: 12px;
     }
 
-    .feature-text {
-      text-align: right;
-    }
-
-    .feature-title {
-      color: white;
-      font-size: 14px;
-      font-weight: 700;
-    }
-
-    .feature-desc {
-      color: rgba(255,255,255,0.6);
-      font-size: 12px;
-    }
+    .feature-text { text-align: right; }
+    .feature-title { color: white; font-size: 14px; font-weight: 700; }
+    .feature-desc { color: rgba(255,255,255,0.6); font-size: 12px; }
 
     .btn-open {
+      width: 100%;
+      padding: 18px;
+      border-radius: 14px;
+      border: none;
       background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
       color: #1e3a8a;
-      border: none;
-      padding: 18px 40px;
-      border-radius: 50px;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 700;
       font-family: 'Cairo', sans-serif;
       cursor: pointer;
-      width: 100%;
-      margin-bottom: 16px;
-      box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+      margin-bottom: 12px;
       transition: all 0.3s ease;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
     }
 
     .btn-open:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 15px 50px rgba(0,0,0,0.4);
+      transform: translateY(-2px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.3);
     }
 
-    .btn-open:active {
-      transform: translateY(0) scale(0.98);
-    }
-
-    .btn-install {
+    .btn-logout {
+      width: 100%;
+      padding: 12px;
+      border-radius: 14px;
+      border: 2px solid rgba(255,255,255,0.2);
       background: transparent;
-      color: rgba(255,255,255,0.8);
-      border: 2px solid rgba(255,255,255,0.3);
-      padding: 14px 30px;
-      border-radius: 50px;
+      color: rgba(255,255,255,0.7);
       font-size: 14px;
       font-weight: 600;
       font-family: 'Cairo', sans-serif;
       cursor: pointer;
-      width: 100%;
       transition: all 0.3s ease;
-      display: none;
     }
 
-    .btn-install.show {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-    }
-
-    .btn-install:hover {
+    .btn-logout:hover {
       background: rgba(255,255,255,0.1);
-      border-color: rgba(255,255,255,0.5);
     }
-
-    .footer {
-      margin-top: 40px;
-      color: rgba(255,255,255,0.4);
-      font-size: 12px;
-    }
-
-    .particles {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-      overflow: hidden;
-      z-index: -1;
-    }
-
-    .particle {
-      position: absolute;
-      width: 4px;
-      height: 4px;
-      background: rgba(255,255,255,0.3);
-      border-radius: 50%;
-      animation: particle-float 15s infinite;
-    }
-
-    @keyframes particle-float {
-      0%, 100% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
-      10% { opacity: 1; }
-      90% { opacity: 1; }
-      100% { transform: translateY(-100vh) rotate(720deg); opacity: 0; }
-    }
-
-    .offline-msg {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      background: #ef4444;
-      color: white;
-      text-align: center;
-      padding: 10px;
-      font-size: 13px;
-      z-index: 300;
-      display: none;
-      font-weight: 600;
-    }
-
-    .offline-msg.show { display: block; }
   </style>
 </head>
 <body>
 
-  <div class="offline-msg" id="offlineMsg">⚠️ لا يوجد اتصال بالإنترنت</div>
-
-  <div class="particles" id="particles"></div>
-
   <div class="container">
-    <div class="logo">📊</div>
-    <h1>CRM Pro</h1>
-    <p class="subtitle">نظام إدارة العملاء الذكي</p>
 
-    <div class="features">
-      <div class="feature">
-        <div class="feature-icon">⚡</div>
-        <div class="feature-text">
-          <div class="feature-title">سريع وخفيف</div>
-          <div class="feature-desc">يعمل على أي جهاز بدون تثبيت</div>
+    <!-- ===== Login Screen ===== -->
+    <div id="loginScreen">
+      <div class="logo">📊</div>
+      <h1>CRM Pro</h1>
+      <p class="subtitle">نظام إدارة العملاء</p>
+
+      <div class="login-box">
+        <div class="lock-icon">🔐</div>
+
+        <div class="input-group">
+          <label>اسم المستخدم</label>
+          <input type="text" id="username" placeholder="أدخل اسم المستخدم">
+        </div>
+
+        <div class="input-group">
+          <label>كلمة المرور</label>
+          <input type="password" id="password" placeholder="أدخل كلمة المرور">
+        </div>
+
+        <button class="btn-login" onclick="login()">🔓 تسجيل الدخول</button>
+
+        <div class="error-msg" id="errorMsg">
+          ❌ اسم المستخدم أو كلمة المرور غير صحيحة
         </div>
       </div>
-      <div class="feature">
-        <div class="feature-icon">🔒</div>
-        <div class="feature-text">
-          <div class="feature-title">آمن 100%</div>
-          <div class="feature-desc">بياناتك محمية على خوادم Google</div>
-        </div>
-      </div>
-      <div class="feature">
-        <div class="feature-icon">📱</div>
-        <div class="feature-text">
-          <div class="feature-title">يعمل على الموبايل</div>
-          <div class="feature-desc">تجربة تطبيق حقيقية</div>
-        </div>
-      </div>
+
+      <p class="footer">CRM Pro © 2025 - نظام محمي</p>
     </div>
 
-    <button class="btn-open" onclick="openCRM()">
-      🚀 فتح التطبيق
-    </button>
+    <!-- ===== Dashboard (بعد الدخول) ===== -->
+    <div class="dashboard" id="dashboard">
+      <div class="logo">📊</div>
+      <div class="welcome">مرحباً بك! 👋</div>
+      <div class="welcome-sub">تم تسجيل الدخول بنجاح</div>
 
-    <button class="btn-install" id="installBtn" onclick="installApp()">
-      📲 ثبت على الشاشة الرئيسية
-    </button>
+      <div class="features">
+        <div class="feature">
+          <div class="feature-icon">⚡</div>
+          <div class="feature-text">
+            <div class="feature-title">سريع وخفيف</div>
+            <div class="feature-desc">يعمل على أي جهاز بدون تثبيت</div>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🔒</div>
+          <div class="feature-text">
+            <div class="feature-title">آمن 100%</div>
+            <div class="feature-desc">بياناتك محمية على خوادم Google</div>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">📱</div>
+          <div class="feature-text">
+            <div class="feature-title">يعمل على الموبايل</div>
+            <div class="feature-desc">تجربة تطبيق حقيقية</div>
+          </div>
+        </div>
+      </div>
 
-    <p class="footer">CRM Pro © 2025</p>
+      <button class="btn-open" onclick="openCRM()">🚀 فتح التطبيق</button>
+      <button class="btn-logout" onclick="logout()">🚪 تسجيل الخروج</button>
+
+      <p class="footer">CRM Pro © 2025</p>
+    </div>
+
   </div>
 
   <script>
     const CRM_URL = "https://script.google.com/macros/s/AKfycbwUufi-JE2ZYbaNVT3kXJkTG-bpWHBAGpSGUNJatqo1V6mE_v2BJjqu8relbAFYc43OzA/exec";
 
-    // فتح CRM
+    // ===== بيانات الدخول (غيّرها!) =====
+    const USERS = {
+      "admin": "882014tw",
+      "user1": "pass123",
+      "موظف": "123456"
+    };
+
+    // ===== فتح CRM =====
     function openCRM() {
       window.open(CRM_URL, '_blank');
     }
 
-    // إنشاء particles
-    const particlesContainer = document.getElementById('particles');
-    for (let i = 0; i < 20; i++) {
-      const p = document.createElement('div');
-      p.className = 'particle';
-      p.style.left = Math.random() * 100 + '%';
-      p.style.animationDelay = Math.random() * 15 + 's';
-      p.style.animationDuration = (10 + Math.random() * 10) + 's';
-      particlesContainer.appendChild(p);
+    // ===== تسجيل الدخول =====
+    function login() {
+      const username = document.getElementById('username').value.trim();
+      const password = document.getElementById('password').value.trim();
+      const errorMsg = document.getElementById('errorMsg');
+
+      if (USERS[username] && USERS[username] === password) {
+        // نجاح
+        localStorage.setItem('crm_logged_in', 'true');
+        localStorage.setItem('crm_user', username);
+        showDashboard();
+      } else {
+        // فشل
+        errorMsg.classList.add('show');
+        setTimeout(() => errorMsg.classList.remove('show'), 3000);
+      }
     }
 
-    // Service Worker
+    // ===== تسجيل الخروج =====
+    function logout() {
+      localStorage.removeItem('crm_logged_in');
+      localStorage.removeItem('crm_user');
+      showLogin();
+    }
+
+    // ===== عرض Dashboard =====
+    function showDashboard() {
+      document.getElementById('loginScreen').style.display = 'none';
+      document.getElementById('dashboard').classList.add('show');
+    }
+
+    // ===== عرض Login =====
+    function showLogin() {
+      document.getElementById('loginScreen').style.display = 'block';
+      document.getElementById('dashboard').classList.remove('show');
+      document.getElementById('username').value = '';
+      document.getElementById('password').value = '';
+    }
+
+    // ===== Enter key =====
+    document.getElementById('password').addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') login();
+    });
+
+    // ===== Check if already logged in =====
+    if (localStorage.getItem('crm_logged_in') === 'true') {
+      showDashboard();
+    }
+
+    // ===== Service Worker =====
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('sw.js')
         .then(reg => console.log('SW registered'))
         .catch(err => console.log('SW error:', err));
     }
-
-    // Install Prompt
-    let deferredPrompt = null;
-    window.addEventListener('beforeinstallprompt', (e) => {
-      e.preventDefault();
-      deferredPrompt = e;
-      document.getElementById('installBtn').classList.add('show');
-    });
-
-    function installApp() {
-      if (deferredPrompt) {
-        deferredPrompt.prompt();
-        deferredPrompt.userChoice.then((choiceResult) => {
-          if (choiceResult.outcome === 'accepted') {
-            document.getElementById('installBtn').classList.remove('show');
-          }
-          deferredPrompt = null;
-        });
-      }
-    }
-
-    // Offline detection
-    window.addEventListener('online', () => document.getElementById('offlineMsg').classList.remove('show'));
-    window.addEventListener('offline', () => document.getElementById('offlineMsg').classList.add('show'));
   </script>
 
 </body>
