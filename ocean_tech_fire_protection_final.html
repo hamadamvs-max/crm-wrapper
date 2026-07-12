@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أوشن تكنولوجي | أنظمة إنذار وإطفاء الحريق في مصر - اعتماد الحماية المدنية</title>
+  <meta name="description" content="أوشن تكنولوجي لتوريد وتركيب أنظمة الإنذار والإطفاء في مصر. اعتماد الحماية المدنية، مضخات حريق معتمدة، لوحات إنذار Mircom وNotifier. العاشر من رمضان.">
+  <meta name="keywords" content="شركات إطفاء حريق في مصر, اعتماد الحماية المدنية, أنظمة إنذار حريق, مضخات حريق, طفايات حريق, العاشر من رمضان">
+  <link rel="alternate" hreflang="ar" href="https://oceantech-eg.com/ar/" />
+  <link rel="alternate" hreflang="en" href="https://oceantech-eg.com/en/" />
+  <link rel="alternate" hreflang="x-default" href="https://oceantech-eg.com/" />
+  <meta property="og:title" content="Ocean Tech | Fire Protection Systems Egypt">
+  <meta property="og:description" content="Fire alarm & fire fighting systems supply, installation & Civil Defense approval in Egypt.">
+  <meta property="og:url" content="https://oceantech-eg.com">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Ocean Technology for Fire Protection Systems","alternateName":"أوشن تكنولوجي لأنظمة الحريق","url":"https://oceantech-eg.com","telephone":"+20-109-067-0570","email":"info@oceantech-eg.com","address":{"@type":"PostalAddress","streetAddress":"Petra Mall, Building 1, Al-Ardaweya","addressLocality":"10th of Ramadan City","addressRegion":"Sharqia","addressCountry":"EG"},"geo":{"@type":"GeoCoordinates","latitude":"30.2903","longitude":"31.7415"},"openingHours":"Mo-Sa 09:00-18:00","priceRange":"$$","areaServed":"Egypt"}
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    /* ============================================================
+       OCEAN TECH - FIRE PROTECTION SYSTEMS
+       Logo-Matched Scientific Color Palette (2026)
+
+       Logo Navy:     #0a1a4a  (matches the shield blue)
+       Logo Red:      #c41e1e  (matches OCEAN TECH text)
+       Logo Navy-2:   #0d1b3e  (deeper variant)
+       Steel Blue:    #3d6fa0  (bridge between navy and warm)
+       Warm Cream:    #f5f3ee  (eye-comfort background)
+       Highlight:     #fef6e9  (warm accent areas)
+       Charcoal:      #2c3e50  (readable text)
+       ============================================================ */
+
+    :root{
+      --logo-navy:#0a1a4a;
+      --logo-navy-light:#142a5e;
+      --logo-navy-dark:#060f2e;
+      --logo-red:#c41e1e;
+      --logo-red-light:#e04a4a;
+      --logo-red-dark:#9a1818;
+      --steel-blue:#3d6fa0;
+      --steel-light:#5a8fc4;
+      --warm-cream:#f5f3ee;
+      --warm-highlight:#fef6e9;
+      --surface:#ffffff;
+      --charcoal:#2c3e50;
+      --charcoal-light:#4a5d70;
+      --charcoal-muted:#7a8fa0;
+      --warm-border:#e0dbd2;
+      --warm-border-light:#ede8e0;
+    }
+
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+
+    body{
+      font-family:'Tajawal','Inter',sans-serif;
+      background:var(--warm-cream);
+      color:var(--charcoal);
+      overflow-x:hidden;
+      line-height:1.7;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    body[dir="ltr"]{font-family:'Inter','Tajawal',sans-serif}
+
+    .ltr-num{direction:ltr!important;unicode-bidi:embed;display:inline-block}
+
+    /* ========== NAVBAR ========== */
+    .navbar{
+      position:fixed;top:0;left:0;right:0;z-index:1000;
+      background:rgba(10,26,74,0.93);
+      backdrop-filter:blur(20px) saturate(1.2);
+      border-bottom:1px solid rgba(255,255,255,0.06);
+      padding:0.6rem 2rem;
+      display:flex;align-items:center;justify-content:space-between;
+      transition:all 0.3s ease;
+    }
+    .nav-logo{display:flex;align-items:center;gap:0.75rem;text-decoration:none}
+    .nav-logo img{width:44px;height:44px;object-fit:contain;border-radius:8px}
+    .nav-logo-text{color:#fff;font-weight:800;font-size:1.15rem;line-height:1.2}
+    .nav-logo-text span{display:block;font-size:0.65rem;color:var(--logo-red-light);font-weight:700;letter-spacing:1.5px;margin-top:2px}
+    .nav-links{display:flex;align-items:center;gap:2rem;list-style:none}
+    .nav-links a{color:rgba(255,255,255,0.85);text-decoration:none;font-weight:500;font-size:0.88rem;transition:all 0.2s;position:relative}
+    .nav-links a:hover{color:#fff}
+    .nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--logo-red-light);transition:width 0.3s}
+    .nav-links a:hover::after{width:100%}
+    .lang-switcher{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.18);color:#fff;padding:0.35rem 0.9rem;border-radius:8px;cursor:pointer;font-weight:600;font-size:0.8rem;transition:all 0.2s;display:flex;align-items:center;gap:0.5rem}
+    .lang-switcher:hover{background:rgba(255,255,255,0.13);border-color:var(--logo-red-light)}
+    .mobile-menu-btn{display:none;background:none;border:none;color:#fff;font-size:1.5rem;cursor:pointer}
+
+    /* ========== HERO ========== */
+    .hero{
+      min-height:100vh;
+      background:linear-gradient(145deg,var(--logo-navy) 0%,var(--logo-navy-light) 45%,var(--steel-blue) 100%);
+      position:relative;overflow:hidden;
+      display:flex;align-items:center;
+      padding-top:80px;
+    }
+    .hero::before{
+      content:'';position:absolute;inset:0;
+      background:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="0.7" fill="rgba(255,255,255,0.03)"/></svg>');
+      background-size:55px 55px;
+      animation:drift 28s linear infinite;
+    }
+    .hero::after{
+      content:'';position:absolute;bottom:0;left:0;right:0;height:220px;
+      background:linear-gradient(to top,var(--warm-cream),transparent);
+      pointer-events:none;
+    }
+    @keyframes drift{0%{background-position:0 0}100%{background-position:55px 55px}}
+
+    .hero-particles{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+    .particle{position:absolute;width:3px;height:3px;background:rgba(255,180,100,0.35);border-radius:50%;animation:floatUp 12s infinite ease-in}
+    @keyframes floatUp{0%{transform:translateY(100vh) scale(0);opacity:0}15%{opacity:0.4}100%{transform:translateY(-10vh) scale(1);opacity:0}}
+
+    .hero-content{position:relative;z-index:2;max-width:1200px;margin:0 auto;padding:2rem;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+
+    .hero-badge{display:inline-flex;align-items:center;gap:0.5rem;background:rgba(196,30,30,0.12);border:1px solid rgba(196,30,30,0.22);color:#ffc4c4;padding:0.5rem 1.2rem;border-radius:50px;font-size:0.82rem;font-weight:700;margin-bottom:1.5rem;backdrop-filter:blur(10px)}
+    .hero-badge .pulse{width:8px;height:8px;background:var(--logo-red-light);border-radius:50%;animation:pulse 2.5s infinite}
+    @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.4;transform:scale(1.6)}}
+
+    .hero h1{color:#fff;font-size:3rem;font-weight:900;line-height:1.15;margin-bottom:1.5rem;text-shadow:0 2px 18px rgba(0,0,0,0.2)}
+    .hero h1 .highlight{background:linear-gradient(90deg,#ffd89b,#ff7a7a);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .hero p{color:rgba(255,255,255,0.84);font-size:1.05rem;line-height:1.9;margin-bottom:2rem;max-width:520px}
+    .hero-cta-group{display:flex;gap:1rem;flex-wrap:wrap}
+
+    .btn-primary{
+      background:linear-gradient(135deg,var(--logo-red),var(--logo-red-dark));color:#fff;padding:0.95rem 2.4rem;border:none;border-radius:10px;
+      font-weight:800;font-size:0.95rem;cursor:pointer;box-shadow:0 6px 22px rgba(196,30,30,0.35);
+      transition:all 0.3s ease;text-decoration:none;display:inline-flex;align-items:center;gap:0.5rem;
+    }
+    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 32px rgba(196,30,30,0.45)}
+    .btn-secondary{
+      background:rgba(255,255,255,0.09);color:#fff;padding:0.95rem 2.4rem;border:1.5px solid rgba(255,255,255,0.22);border-radius:10px;
+      font-weight:700;font-size:0.95rem;cursor:pointer;transition:all 0.3s ease;text-decoration:none;display:inline-flex;align-items:center;gap:0.5rem;backdrop-filter:blur(10px);
+    }
+    .btn-secondary:hover{background:rgba(255,255,255,0.16);border-color:rgba(255,255,255,0.35)}
+
+    .hero-visual{position:relative;display:flex;justify-content:center;align-items:center}
+    .hero-shield{width:360px;height:360px;position:relative;animation:float 7s ease-in-out infinite}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-16px)}}
+    .hero-shield img,.hero-shield svg{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 12px 40px rgba(0,0,0,0.25))}
+
+    .hero-stats{
+      position:absolute;bottom:-5px;left:50%;transform:translateX(-50%);
+      display:flex;gap:2.5rem;background:rgba(255,255,255,0.96);backdrop-filter:blur(20px);
+      padding:1.4rem 2.4rem;border-radius:16px;border:1px solid var(--warm-border-light);
+      box-shadow:0 10px 35px rgba(10,26,74,0.1);
+    }
+    .stat-item{text-align:center}
+    .stat-item .num{color:var(--logo-red);font-size:1.7rem;font-weight:900}
+    .stat-item .label{color:var(--charcoal-muted);font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-top:0.25rem}
+
+    /* ========== SECTIONS ========== */
+    section{padding:4.5rem 2rem}
+    .section-header{text-align:center;max-width:680px;margin:0 auto 3.5rem}
+    .section-tag{display:inline-block;color:var(--logo-red);font-weight:800;font-size:0.78rem;text-transform:uppercase;letter-spacing:2.5px;margin-bottom:0.75rem;background:var(--warm-highlight);padding:0.35rem 1rem;border-radius:50px}
+    .section-header h2{font-size:2.2rem;font-weight:900;color:var(--logo-navy);margin-bottom:1rem;line-height:1.25}
+    .section-header p{color:var(--charcoal-light);font-size:1.02rem;line-height:1.8}
+
+    /* ========== SERVICES ========== */
+    .services{background:var(--warm-cream)}
+    .services-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+    .service-card{background:var(--surface);border-radius:20px;padding:2.2rem;border:1px solid var(--warm-border-light);transition:all 0.4s cubic-bezier(0.16,1,0.3,1);position:relative;overflow:hidden;box-shadow:0 2px 10px rgba(10,26,74,0.03)}
+    .service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--logo-red),var(--steel-blue));transform:scaleX(0);transition:transform 0.4s ease;border-radius:20px 20px 0 0}
+    .service-card:hover::before{transform:scaleX(1)}
+    .service-card:hover{transform:translateY(-6px);box-shadow:0 18px 45px rgba(10,26,74,0.08);border-color:transparent}
+    .service-icon{width:52px;height:52px;border-radius:14px;background:linear-gradient(135deg,var(--logo-navy),var(--steel-blue));display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:1.2rem;box-shadow:0 5px 18px rgba(10,26,74,0.18)}
+    .service-card h3{font-size:1.1rem;font-weight:800;color:var(--logo-navy);margin-bottom:0.5rem}
+    .service-card p{color:var(--charcoal-light);line-height:1.75;font-size:0.9rem}
+
+    /* ========== PRODUCTS ========== */
+    .products{background:var(--surface)}
+    .products-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+    .product-card{border-radius:20px;overflow:hidden;border:1px solid var(--warm-border-light);transition:all 0.4s cubic-bezier(0.16,1,0.3,1);background:var(--surface);box-shadow:0 2px 10px rgba(10,26,74,0.03)}
+    .product-card:hover{transform:translateY(-6px);box-shadow:0 18px 45px rgba(10,26,74,0.08);border-color:transparent}
+    .product-img{height:200px;background:linear-gradient(135deg,var(--warm-cream),var(--warm-border-light));display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+    .product-img svg{width:80px;height:80px;opacity:0.85}
+    .product-img .badge{position:absolute;top:1rem;right:1rem;background:var(--logo-red);color:#fff;padding:0.25rem 0.75rem;border-radius:50px;font-size:0.68rem;font-weight:800;box-shadow:0 2px 10px rgba(196,30,30,0.25)}
+    .product-info{padding:1.5rem}
+    .product-info h3{font-size:1rem;font-weight:800;color:var(--logo-navy);margin-bottom:0.5rem}
+    .product-info p{color:var(--charcoal-light);font-size:0.86rem;line-height:1.7;margin-bottom:1rem}
+    .product-meta{display:flex;gap:0.75rem;flex-wrap:wrap}
+    .product-meta span{font-size:0.7rem;color:var(--steel-blue);background:var(--warm-highlight);padding:0.2rem 0.7rem;border-radius:50px;font-weight:700}
+
+    /* ========== PARTNERS ========== */
+    .partners{background:linear-gradient(145deg,var(--logo-navy) 0%,var(--logo-navy-light) 45%,var(--steel-blue) 100%);color:#fff;text-align:center;position:relative;overflow:hidden}
+    .partners::before{content:'';position:absolute;inset:0;background:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="0.5" fill="rgba(255,255,255,0.03)"/></svg>');background-size:40px 40px}
+    .partners h2{color:#fff}
+    .partners-grid{max-width:1000px;margin:2.5rem auto 0;display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;position:relative;z-index:1}
+    .partner-badge{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);padding:0.85rem 1.6rem;border-radius:12px;font-weight:700;font-size:0.88rem;color:rgba(255,255,255,0.88);transition:all 0.3s ease;cursor:default;backdrop-filter:blur(10px);display:flex;align-items:center;gap:0.5rem}
+    .partner-badge:hover{background:rgba(196,30,30,0.18);border-color:var(--logo-red-light);transform:translateY(-3px);box-shadow:0 8px 22px rgba(0,0,0,0.12)}
+    .partner-dot{width:8px;height:8px;border-radius:50%;display:inline-block}
+
+    /* ========== PORTFOLIO ========== */
+    .portfolio{background:var(--warm-cream)}
+    .portfolio-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
+    .portfolio-card{background:var(--surface);border-radius:20px;overflow:hidden;border:1px solid var(--warm-border-light);display:flex;transition:all 0.4s cubic-bezier(0.16,1,0.3,1);box-shadow:0 2px 10px rgba(10,26,74,0.03)}
+    .portfolio-card:hover{box-shadow:0 18px 45px rgba(10,26,74,0.08);transform:translateY(-4px);border-color:transparent}
+    .portfolio-img{width:170px;min-height:170px;background:linear-gradient(135deg,var(--logo-navy),var(--steel-blue));display:flex;align-items:center;justify-content:center;color:#fff;font-size:2.2rem}
+    .portfolio-info{padding:1.6rem;flex:1}
+    .portfolio-info h3{font-size:1.05rem;font-weight:800;color:var(--logo-navy);margin-bottom:0.4rem}
+    .portfolio-info p{color:var(--charcoal-light);font-size:0.86rem;line-height:1.7}
+    .portfolio-tags{display:flex;gap:0.5rem;margin-top:1rem;flex-wrap:wrap}
+    .portfolio-tags span{background:var(--warm-highlight);color:var(--steel-blue);padding:0.2rem 0.6rem;border-radius:6px;font-size:0.68rem;font-weight:700}
+
+    /* ========== CONTACT ========== */
+    .contact{background:var(--logo-navy);color:#fff;padding:4rem 2rem 2rem;position:relative}
+    .contact::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--logo-red),var(--steel-blue))}
+    .contact-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem}
+    .contact-brand{display:flex;align-items:flex-start;gap:1rem}
+    .contact-brand img{width:50px;height:50px;object-fit:contain;border-radius:8px;background:rgba(255,255,255,0.08);padding:6px}
+    .contact-brand div{flex:1}
+    .contact-brand h3{color:#fff;margin-bottom:0.6rem;font-size:1.15rem;font-weight:800}
+    .contact-brand p{color:rgba(255,255,255,0.65);line-height:1.8;font-size:0.88rem}
+    .contact-col h4{color:#fff;font-size:0.9rem;font-weight:800;margin-bottom:1.2rem;letter-spacing:0.5px}
+    .contact-col a,.contact-col p{color:rgba(255,255,255,0.62);text-decoration:none;display:block;margin-bottom:0.65rem;font-size:0.85rem;transition:all 0.2s}
+    .contact-col a:hover{color:#fff;transform:translateX(-3px)}
+    .contact-phone{direction:ltr!important;unicode-bidi:embed;display:inline-flex!important;align-items:center;gap:0.5rem}
+    .footer-bottom{max-width:1200px;margin:0 auto;border-top:1px solid rgba(255,255,255,0.08);padding-top:2rem;text-align:center;color:rgba(255,255,255,0.35);font-size:0.8rem}
+
+    /* ========== EMERGENCY BOT ========== */
+    .emergency-bot{position:fixed;bottom:2rem;left:2rem;z-index:9999}
+    .emergency-btn{width:58px;height:58px;border-radius:50%;background:linear-gradient(135deg,var(--logo-red),var(--logo-red-dark));border:3px solid rgba(255,255,255,0.3);color:#fff;font-size:1.3rem;cursor:pointer;box-shadow:0 8px 28px rgba(196,30,30,0.4);display:flex;align-items:center;justify-content:center;animation:emergencyPulse 2.5s infinite;transition:all 0.3s ease}
+    @keyframes emergencyPulse{0%,100%{box-shadow:0 0 0 0 rgba(196,30,30,0.55)}70%{box-shadow:0 0 0 16px rgba(196,30,30,0)}}
+    .emergency-btn:hover{transform:scale(1.1);box-shadow:0 0 0 0 rgba(196,30,30,0);animation:none}
+    .emergency-tooltip{position:absolute;bottom:68px;left:0;background:var(--logo-red-dark);color:#fff;padding:0.5rem 1rem;border-radius:8px;font-size:0.75rem;font-weight:700;white-space:nowrap;opacity:0;transform:translateY(10px);transition:all 0.3s ease;pointer-events:none;box-shadow:0 4px 15px rgba(0,0,0,0.2)}
+    .emergency-bot:hover .emergency-tooltip{opacity:1;transform:translateY(0)}
+
+    /* ========== MODAL ========== */
+    .modal-overlay{position:fixed;inset:0;z-index:10000;background:rgba(10,26,74,0.55);backdrop-filter:blur(12px);display:none;align-items:center;justify-content:center;opacity:0;transition:opacity 0.3s ease}
+    .modal-overlay.active{display:flex;opacity:1}
+    .modal{background:var(--surface);border-radius:24px;width:90%;max-width:440px;padding:2.2rem;box-shadow:0 30px 80px rgba(10,26,74,0.2);transform:scale(0.92);transition:transform 0.3s cubic-bezier(0.16,1,0.3,1);position:relative;border:1px solid var(--warm-border-light)}
+    .modal-overlay.active .modal{transform:scale(1)}
+    .modal-header{display:flex;align-items:center;gap:1rem;margin-bottom:1.4rem}
+    .modal-header .icon{width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,var(--logo-red),var(--logo-red-dark));display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.2rem;box-shadow:0 4px 15px rgba(196,30,30,0.25)}
+    .modal-header h3{font-size:1.1rem;font-weight:800;color:var(--logo-navy)}
+    .modal-header p{color:var(--charcoal-muted);font-size:0.8rem;margin-top:0.15rem}
+    .modal-close{position:absolute;top:1.2rem;left:1.2rem;background:none;border:none;font-size:1.3rem;color:var(--charcoal-muted);cursor:pointer;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;transition:all 0.2s}
+    .modal-close:hover{background:var(--warm-cream);color:var(--logo-red)}
+    .form-group{margin-bottom:1rem}
+    .form-group label{display:block;font-size:0.78rem;font-weight:700;color:var(--logo-navy);margin-bottom:0.35rem}
+    .form-group input,.form-group select,.form-group textarea{width:100%;padding:0.75rem 1rem;border:1.5px solid var(--warm-border-light);border-radius:10px;font-size:0.9rem;font-family:inherit;transition:all 0.2s;background:var(--warm-cream);color:var(--charcoal)}
+    .form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:var(--steel-blue);background:var(--surface);box-shadow:0 0 0 3px rgba(61,111,160,0.1)}
+    .form-group input[type="tel"]{direction:ltr;text-align:left}
+    .modal-submit{width:100%;padding:0.85rem;background:linear-gradient(135deg,var(--logo-red),var(--logo-red-dark));color:#fff;border:none;border-radius:10px;font-size:0.9rem;font-weight:800;cursor:pointer;transition:all 0.3s ease;display:flex;align-items:center;justify-content:center;gap:0.5rem;box-shadow:0 4px 18px rgba(196,30,30,0.25)}
+    .modal-submit:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(196,30,30,0.35)}
+    .modal-hint{text-align:center;margin-top:0.85rem;font-size:0.7rem;color:var(--charcoal-muted)}
+    .modal-hint .ltr-num{font-weight:800;color:var(--logo-red)}
+
+    /* ========== ANIMATIONS ========== */
+    .reveal{opacity:0;transform:translateY(32px);transition:all 0.9s cubic-bezier(0.16,1,0.3,1)}
+    .reveal.visible{opacity:1;transform:translateY(0)}
+
+    /* LTR */
+    body[dir="ltr"] .emergency-bot{right:2rem;left:auto}
+    body[dir="ltr"] .emergency-tooltip{right:0;left:auto}
+    body[dir="ltr"] .modal-close{right:1.2rem;left:auto}
+    body[dir="ltr"] .product-img .badge{right:1rem;left:auto}
+    body[dir="ltr"] .contact-col a:hover{transform:translateX(3px)}
+
+    /* RESPONSIVE */
+    @media(max-width:1024px){
+      .hero-content{grid-template-columns:1fr;text-align:center}
+      .hero p{margin:0 auto 2rem}
+      .hero-cta-group{justify-content:center}
+      .hero-visual{order:-1}
+      .hero-shield{width:280px;height:280px}
+      .hero-stats{position:relative;bottom:auto;left:auto;transform:none;margin-top:2rem;gap:1.5rem;padding:1.2rem 2rem}
+      .services-grid,.products-grid{grid-template-columns:repeat(2,1fr)}
+      .portfolio-grid{grid-template-columns:1fr}
+      .contact-grid{grid-template-columns:1fr 1fr}
+      .hero h1{font-size:2.4rem}
+    }
+    @media(max-width:768px){
+      .nav-links{display:none}
+      .mobile-menu-btn{display:block}
+      .hero h1{font-size:1.9rem}
+      .hero-shield{width:220px;height:220px}
+      .hero-stats{flex-wrap:wrap;justify-content:center;gap:1rem}
+      .services-grid,.products-grid,.portfolio-grid{grid-template-columns:1fr}
+      .portfolio-card{flex-direction:column}
+      .portfolio-img{width:100%;height:130px}
+      .contact-grid{grid-template-columns:1fr;gap:2rem}
+      section{padding:3.5rem 1.25rem}
+      .emergency-bot{bottom:1rem;left:1rem}
+      .emergency-btn{width:52px;height:52px}
+      .section-header h2{font-size:1.7rem}
+      .contact-brand{flex-direction:column;align-items:flex-start}
+    }
+  </style>
+</head>
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar" id="navbar">
+  <a href="#" class="nav-logo">
+    <!-- REAL LOGO EMBEDDED -->
+    <svg viewBox="0 0 200 240" width="44" height="44" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="logoShield" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#0d1b3e"/>
+          <stop offset="100%" style="stop-color:#0a1a4a"/>
+        </linearGradient>
+      </defs>
+      <path d="M100 8 L185 48 V115 C185 168 100 232 100 232 C100 232 15 168 15 115 V48 L100 8Z" fill="url(#logoShield)" stroke="#1a3a7a" stroke-width="2"/>
+      <path d="M100 32 L160 58 V108 C160 148 100 195 100 195 C100 195 40 148 40 108 V58 L100 32Z" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+      <!-- Sprinkler head -->
+      <rect x="85" y="52" width="30" height="10" rx="2" fill="#1a3a7a"/>
+      <rect x="90" y="42" width="20" height="10" rx="2" fill="#2a4a8a"/>
+      <rect x="92" y="65" width="16" height="8" rx="2" fill="#c41e1e"/>
+      <rect x="88" y="76" width="24" height="5" rx="2" fill="#1a3a7a"/>
+      <!-- Water spray lines -->
+      <line x1="78" y1="88" x2="68" y2="102" stroke="#3d6fa0" stroke-width="1.8" stroke-dasharray="3 2" opacity="0.7"/>
+      <line x1="88" y1="88" x2="82" y2="108" stroke="#3d6fa0" stroke-width="1.8" stroke-dasharray="3 2" opacity="0.7"/>
+      <line x1="98" y1="88" x2="96" y2="112" stroke="#3d6fa0" stroke-width="1.8" stroke-dasharray="3 2" opacity="0.7"/>
+      <line x1="108" y1="88" x2="112" y2="112" stroke="#3d6fa0" stroke-width="1.8" stroke-dasharray="3 2" opacity="0.7"/>
+      <line x1="118" y1="88" x2="128" y2="108" stroke="#3d6fa0" stroke-width="1.8" stroke-dasharray="3 2" opacity="0.7"/>
+      <line x1="128" y1="88" x2="140" y2="102" stroke="#3d6fa0" stroke-width="1.8" stroke-dasharray="3 2" opacity="0.7"/>
+      <!-- Fire flame -->
+      <path d="M100 125 Q85 140 90 162 Q95 178 100 172 Q105 178 110 162 Q115 140 100 125Z" fill="#c41e1e"/>
+      <path d="M100 138 Q93 148 96 160 Q98 168 100 166 Q102 168 104 160 Q107 148 100 138Z" fill="#e04a4a"/>
+      <path d="M100 148 Q97 154 98 160 Q99 164 100 163 Q101 164 102 160 Q103 154 100 148Z" fill="#ff7a7a"/>
+    </svg>
+    <div class="nav-logo-text">
+      OCEAN TECH
+      <span data-i18n="nav_tagline">أنظمة الحماية من الحريق</span>
+    </div>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#hero" data-i18n="nav_home">الرئيسية</a></li>
+    <li><a href="#services" data-i18n="nav_services">الخدمات</a></li>
+    <li><a href="#products" data-i18n="nav_products">المعدات</a></li>
+    <li><a href="#partners" data-i18n="nav_partners">الشركاء</a></li>
+    <li><a href="#portfolio" data-i18n="nav_portfolio">أعمالنا</a></li>
+    <li><a href="#contact" data-i18n="nav_contact">تواصل معنا</a></li>
+  </ul>
+  <button class="lang-switcher" id="langSwitcher" onclick="toggleLanguage()">
+    <span id="langIcon">🇬🇧</span>
+    <span id="langLabel">English</span>
+  </button>
+  <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+</nav>
+
+<!-- ========== HERO ========== -->
+<section class="hero" id="hero">
+  <div class="hero-particles" id="particles"></div>
+  <div class="hero-content">
+    <div class="hero-text">
+      <div class="hero-badge">
+        <span class="pulse"></span>
+        <span data-i18n="hero_badge">استجابة طوارئ 24/7</span>
+      </div>
+      <h1 data-i18n="hero_title">أنظمة <span class="highlight">حماية متطورة</span> من الحريق في مصر</h1>
+      <p data-i18n="hero_desc">تتخصص أوشن تكنولوجي في توريد وتركيب واعتماد أنظمة الإنذار والإطفاء. ضمان الالتزام باشتراطات الحماية المدنية للمصانع والمكاتب والمباني التجارية في جميع أنحاء مصر.</p>
+      <div class="hero-cta-group">
+        <a href="tel:+201090670570" class="btn-primary ltr-num">📞 +20 109 067 0570</a>
+        <a href="#services" class="btn-secondary" data-i18n="hero_cta_secondary">استكشف خدماتنا →</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-shield">
+        <!-- FULL SIZE LOGO SVG -->
+        <svg viewBox="0 0 200 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="hs1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#142a5e"/>
+              <stop offset="100%" style="stop-color:#0a1a4a"/>
+            </linearGradient>
+            <linearGradient id="hs2" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#0a1a4a"/>
+              <stop offset="100%" style="stop-color:#060f2e"/>
+            </linearGradient>
+            <linearGradient id="hf" x1="0%" y1="100%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#c41e1e"/>
+              <stop offset="50%" style="stop-color:#e04a4a"/>
+              <stop offset="100%" style="stop-color:#ffd89b"/>
+            </linearGradient>
+          </defs>
+          <path d="M100 10 L180 50 V120 C180 170 100 230 100 230 C100 230 20 170 20 120 V50 L100 10Z" fill="url(#hs1)" stroke="#1a3a7a" stroke-width="2.5"/>
+          <path d="M100 35 L155 62 V115 C155 152 100 195 100 195 C100 195 45 152 45 115 V62 L100 35Z" fill="url(#hs2)" stroke="rgba(61,111,160,0.3)" stroke-width="1.5"/>
+          <rect x="85" y="55" width="30" height="12" rx="3" fill="#1a3a7a"/>
+          <rect x="90" y="45" width="20" height="10" rx="2" fill="#2a4a8a"/>
+          <rect x="92" y="72" width="16" height="10" rx="2" fill="#c41e1e"/>
+          <rect x="88" y="85" width="24" height="6" rx="2" fill="#1a3a7a"/>
+          <line x1="75" y1="100" x2="65" y2="115" stroke="#3d6fa0" stroke-width="2" stroke-dasharray="4 2" opacity="0.7"/>
+          <line x1="85" y1="100" x2="78" y2="120" stroke="#3d6fa0" stroke-width="2" stroke-dasharray="4 2" opacity="0.7"/>
+          <line x1="95" y1="100" x2="92" y2="125" stroke="#3d6fa0" stroke-width="2" stroke-dasharray="4 2" opacity="0.7"/>
+          <line x1="105" y1="100" x2="108" y2="125" stroke="#3d6fa0" stroke-width="2" stroke-dasharray="4 2" opacity="0.7"/>
+          <line x1="115" y1="100" x2="122" y2="120" stroke="#3d6fa0" stroke-width="2" stroke-dasharray="4 2" opacity="0.7"/>
+          <line x1="125" y1="100" x2="135" y2="115" stroke="#3d6fa0" stroke-width="2" stroke-dasharray="4 2" opacity="0.7"/>
+          <path d="M100 140 Q85 155 90 175 Q95 190 100 185 Q105 190 110 175 Q115 155 100 140Z" fill="url(#hf)"/>
+          <path d="M100 150 Q92 160 95 172 Q98 180 100 178 Q102 180 105 172 Q108 160 100 150Z" fill="#ff8a8a" opacity="0.6"/>
+        </svg>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item"><div class="num">15+</div><div class="label" data-i18n="stat_years">سنوات خبرة</div></div>
+        <div class="stat-item"><div class="num">500+</div><div class="label" data-i18n="stat_projects">مشروع</div></div>
+        <div class="stat-item"><div class="num">10+</div><div class="label" data-i18n="stat_brands">ماركات</div></div>
+        <div class="stat-item"><div class="num">100%</div><div class="label" data-i18n="stat_compliance">التزام</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SERVICES ========== -->
+<section class="services" id="services">
+  <div class="section-header reveal">
+    <div class="section-tag" data-i18n="services_tag">خبراتنا</div>
+    <h2 data-i18n="services_title">حلول شاملة للسلامة من الحريق</h2>
+    <p data-i18n="services_desc">من التصميم إلى التركيب والاعتماد من الحماية المدنية — نتولى كل مراحل مشروع الحماية من الحريق بدقة وخبرة معتمدة.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <div class="service-icon">🚨</div>
+      <h3 data-i18n="svc_1_title">أنظمة إنذار الحريق</h3>
+      <p data-i18n="svc_1_desc">تصميم وتوريد وتركيب لوحات إنذار العناوين والتقليدية، وأجهزة الكشف وأجهزة الإنذار من Mircom وNotifier وHochiki.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">🧯</div>
+      <h3 data-i18n="svc_2_title">أنظمة الإطفاء</h3>
+      <p data-i18n="svc_2_desc">أنظمة رشاشات رطب وجاف، بكرات خراطيم الإطفاء، شبكات الحنفيات، وأنظمة الرغوة المصممة وفق معايير NFPA والحماية المدنية المصرية.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">⚙️</div>
+      <h3 data-i18n="svc_3_title">مضخات الحريق والمحطات</h3>
+      <p data-i18n="svc_3_desc">مضخات حريق معتمدة UL/FM، ومضخات الجوكي، وتركيبات كاملة لغرف المضخات مع لوحات تحكم أوتوماتيكية واختبارات التدفق.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">🧪</div>
+      <h3 data-i18n="svc_4_title">اعتماد الحماية المدنية</h3>
+      <p data-i18n="svc_4_desc">توثيق شامل، وتنسيق التفتيش، والشهادات الرسمية من جهات الحماية المدنية المصرية لجميع أنواع المباني.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">🔧</div>
+      <h3 data-i18n="svc_5_title">الصيانة وعقود AMC</h3>
+      <p data-i18n="svc_5_desc">عقود صيانة سنوية مع استجابة طوارئ 24/7. فحوصات وقائية، اختبارات الأنظمة، وتوريد قطع الغيار للحفاظ على تشغيل أنظمتك.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">📋</div>
+      <h3 data-i18n="svc_6_title">الاستشارات والتصميم</h3>
+      <p data-i18n="svc_6_desc">استشارات هندسة السلامة من الحريق للإنشاءات الجديدة والتجديدات. حسابات هيدروليكية، تقييم المخاطر، وتصميم أنظمة متوافقة مع الأكواد.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PRODUCTS ========== -->
+<section class="products" id="products">
+  <div class="section-header reveal">
+    <div class="section-tag" data-i18n="products_tag">معدات معتمدة</div>
+    <h2 data-i18n="products_title">منتجات حماية من الحريق معتمدة</h2>
+    <p data-i18n="products_desc">نورد ونركب معدات السلامة من الحريق المعتمدة عالمياً من كبار المصنعين في العالم، مضمونة للموثوقية القصوى والامتثال.</p>
+  </div>
+  <div class="products-grid">
+    <!-- Product 1: Fire Alarm Panels -->
+    <div class="product-card reveal">
+      <div class="product-img">
+        <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+          <rect x="8" y="15" width="64" height="50" rx="4" fill="none" stroke="#0a1a4a" stroke-width="2.5"/>
+          <rect x="15" y="22" width="50" height="8" rx="2" fill="#0a1a4a"/>
+          <rect x="15" y="34" width="22" height="6" rx="1" fill="#3d6fa0"/>
+          <rect x="15" y="43" width="22" height="6" rx="1" fill="#3d6fa0"/>
+          <rect x="15" y="52" width="22" height="6" rx="1" fill="#3d6fa0"/>
+          <circle cx="52" cy="40" r="10" fill="none" stroke="#c41e1e" stroke-width="2.5"/>
+          <circle cx="52" cy="40" r="4" fill="#c41e1e"/>
+          <rect x="42" y="52" width="20" height="6" rx="1" fill="#c41e1e"/>
+        </svg>
+        <span class="badge">UL Listed</span>
+      </div>
+      <div class="product-info">
+        <h3 data-i18n="prod_1_title">لوحات تحكم إنذار الحريق</h3>
+        <p data-i18n="prod_1_desc">لوحات العناوين والتقليدية من Mircom وNotifier وSimplex بتقنية الحلقة الذكية وواجهات شاشات اللمس.</p>
+        <div class="product-meta"><span>Mircom</span><span>Notifier</span><span>Simplex</span></div>
+      </div>
+    </div>
+    <!-- Product 2: Sprinklers -->
+    <div class="product-card reveal">
+      <div class="product-img">
+        <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+          <rect x="36" y="8" width="8" height="25" rx="2" fill="#0a1a4a"/>
+          <rect x="32" y="30" width="16" height="8" rx="3" fill="#3d6fa0"/>
+          <path d="M40 38 L40 55" stroke="#0a1a4a" stroke-width="3"/>
+          <ellipse cx="40" cy="58" rx="12" ry="6" fill="none" stroke="#3d6fa0" stroke-width="2"/>
+          <line x1="28" y1="58" x2="18" y2="68" stroke="#3d6fa0" stroke-width="2" stroke-dasharray="3 2"/>
+          <line x1="40" y1="64" x2="40" y2="74" stroke="#3d6fa0" stroke-width="2" stroke-dasharray="3 2"/>
+          <line x1="52" y1="58" x2="62" y2="68" stroke="#3d6fa0" stroke-width="2" stroke-dasharray="3 2"/>
+          <circle cx="40" cy="72" r="3" fill="#3d6fa0" opacity="0.5"/>
+          <circle cx="22" cy="70" r="2" fill="#3d6fa0" opacity="0.5"/>
+          <circle cx="58" cy="70" r="2" fill="#3d6fa0" opacity="0.5"/>
+        </svg>
+        <span class="badge">FM Approved</span>
+      </div>
+      <div class="product-info">
+        <h3 data-i18n="prod_2_title">أنظمة الرشاشات</h3>
+        <p data-i18n="prod_2_desc">رشاشات معلقة ورأسية وجدارية من Tyco وReliable وRapidrop. معامل K مُحسّن لكل تصنيف مخاطر.</p>
+        <div class="product-meta"><span>Tyco</span><span>Reliable</span><span>Rapidrop</span></div>
+      </div>
+    </div>
+    <!-- Product 3: Fire Pumps -->
+    <div class="product-card reveal">
+      <div class="product-img">
+        <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+          <rect x="20" y="20" width="40" height="35" rx="4" fill="none" stroke="#0a1a4a" stroke-width="2.5"/>
+          <rect x="25" y="25" width="30" height="12" rx="2" fill="#0a1a4a"/>
+          <circle cx="32" cy="48" r="6" fill="none" stroke="#3d6fa0" stroke-width="2"/>
+          <circle cx="48" cy="48" r="6" fill="none" stroke="#3d6fa0" stroke-width="2"/>
+          <rect x="28" y="42" width="24" height="3" fill="#3d6fa0"/>
+          <rect x="35" y="8" width="10" height="12" rx="2" fill="#c41e1e"/>
+          <line x1="40" y1="8" x2="40" y2="4" stroke="#0a1a4a" stroke-width="2"/>
+          <circle cx="40" cy="55" r="3" fill="#c41e1e"/>
+        </svg>
+        <span class="badge">UL/FM</span>
+      </div>
+      <div class="product-info">
+        <h3 data-i18n="prod_3_title">مضخات الحريق ووحدات التحكم</h3>
+        <p data-i18n="prod_3_desc">مضخات حريق ديزل وكهربائية مع وحدات تحكم أوتوماتيكية، وعدادات التدفق، وأنظمة الحفاظ على الضغط.</p>
+        <div class="product-meta"><span>UL Listed</span><span>FM Approved</span></div>
+      </div>
+    </div>
+    <!-- Product 4: Extinguishers -->
+    <div class="product-card reveal">
+      <div class="product-img">
+        <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+          <rect x="32" y="10" width="16" height="8" rx="2" fill="#0a1a4a"/>
+          <rect x="36" y="16" width="8" height="6" fill="#3d6fa0"/>
+          <rect x="28" y="22" width="24" height="42" rx="6" fill="none" stroke="#c41e1e" stroke-width="2.5"/>
+          <rect x="32" y="28" width="16" height="8" rx="2" fill="#c41e1e" opacity="0.8"/>
+          <rect x="32" y="40" width="16" height="8" rx="2" fill="#c41e1e" opacity="0.6"/>
+          <rect x="32" y="52" width="16" height="8" rx="2" fill="#c41e1e" opacity="0.4"/>
+          <rect x="26" y="60" width="28" height="6" rx="2" fill="#0a1a4a"/>
+        </svg>
+        <span class="badge">EN3 / BS</span>
+      </div>
+      <div class="product-info">
+        <h3 data-i18n="prod_4_title">طفايات الحريق</h3>
+        <p data-i18n="prod_4_desc">طفايات بودرة ABC وCO₂ ورغوة ورذاذ ماء بجميع السعات. حوامل حائط، خزائن، وبطاقات فحص سنوي متضمنة.</p>
+        <div class="product-meta"><span>ABC</span><span>CO₂</span><span>Foam</span></div>
+      </div>
+    </div>
+    <!-- Product 5: Hose Cabinets -->
+    <div class="product-card reveal">
+      <div class="product-img">
+        <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+          <rect x="15" y="12" width="50" height="56" rx="4" fill="none" stroke="#0a1a4a" stroke-width="2.5"/>
+          <rect x="20" y="17" width="40" height="46" rx="2" fill="none" stroke="#3d6fa0" stroke-width="1.5" stroke-dasharray="4 2"/>
+          <circle cx="40" cy="40" r="14" fill="none" stroke="#c41e1e" stroke-width="2"/>
+          <circle cx="40" cy="40" r="6" fill="none" stroke="#c41e1e" stroke-width="2"/>
+          <rect x="37" y="54" width="6" height="10" rx="2" fill="#0a1a4a"/>
+          <line x1="40" y1="64" x2="40" y2="70" stroke="#3d6fa0" stroke-width="2"/>
+        </svg>
+        <span class="badge">NFPA</span>
+      </div>
+      <div class="product-info">
+        <h3 data-i18n="prod_5_title">خزائن و بكرات خراطيم الحريق</h3>
+        <p data-i18n="prod_5_desc">خزائن خراطيم سطحية ومغمورة، وبكرات خراطيم بفوهات نحاسية، ومجمعات صمامات الهبوط.</p>
+        <div class="product-meta"><span>Stainless</span><span>Steel</span><span>Brass</span></div>
+      </div>
+    </div>
+    <!-- Product 6: Detectors -->
+    <div class="product-card reveal">
+      <div class="product-img">
+        <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="40" cy="40" r="28" fill="none" stroke="#0a1a4a" stroke-width="2.5"/>
+          <circle cx="40" cy="40" r="18" fill="none" stroke="#3d6fa0" stroke-width="2"/>
+          <circle cx="40" cy="40" r="8" fill="#c41e1e"/>
+          <circle cx="40" cy="40" r="4" fill="#e04a4a"/>
+          <line x1="40" y1="12" x2="40" y2="4" stroke="#0a1a4a" stroke-width="2"/>
+          <circle cx="40" cy="4" r="2" fill="#0a1a4a"/>
+          <path d="M28 18 Q20 28 22 40" stroke="#3d6fa0" stroke-width="1.5" fill="none" opacity="0.5"/>
+          <path d="M52 18 Q60 28 58 40" stroke="#3d6fa0" stroke-width="1.5" fill="none" opacity="0.5"/>
+        </svg>
+        <span class="badge">EN54</span>
+      </div>
+      <div class="product-info">
+        <h3 data-i18n="prod_6_title">أجهزة الكشف</h3>
+        <p data-i18n="prod_6_desc">أجهزة كشف الدخان والحرارة والشعاع واللهب من Hochiki وApollo وBavaria. أنظمة VESDA الشفطية.</p>
+        <div class="product-meta"><span>Hochiki</span><span>Apollo</span><span>Bavaria</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PARTNERS ========== -->
+<section class="partners" id="partners">
+  <div class="section-header reveal">
+    <div class="section-tag" style="background:rgba(255,255,255,0.12);color:#ffd89b;" data-i18n="partners_tag">موثوق عالمياً</div>
+    <h2 data-i18n="partners_title">شركاؤنا العالميون</h2>
+    <p style="color:rgba(255,255,255,0.75);" data-i18n="partners_desc">نحن موزعون معتمدون ومركّبون معتمدون لأعرق مصنعي الحماية من الحريق في العالم.</p>
+  </div>
+  <div class="partners-grid">
+    <div class="partner-badge"><span class="partner-dot" style="background:#2e7d32;"></span>Mircom</div>
+    <div class="partner-badge"><span class="partner-dot" style="background:#1565c0;"></span>Rapidrop</div>
+    <div class="partner-badge"><span class="partner-dot" style="background:#ef6c00;"></span>LPG</div>
+    <div class="partner-badge"><span class="partner-dot" style="background:#1976d2;"></span>Reliable</div>
+    <div class="partner-badge"><span class="partner-dot" style="background:#1565c0;"></span>Tyco</div>
+    <div class="partner-badge"><span class="partner-dot" style="background:#c62828;"></span>Bavaria</div>
+    <div class="partner-badge"><span class="partner-dot" style="background:#0d47a1;"></span>Simplex</div>
+    <div class="partner-badge"><span class="partner-dot" style="background:#c62828;"></span>Notifier</div>
+    <div class="partner-badge"><span class="partner-dot" style="background:#ff6f00;"></span>Honeywell</div>
+    <div class="partner-badge"><span class="partner-dot" style="background:#0d47a1;"></span>Hochiki</div>
+    <div class="partner-badge"><span class="partner-dot" style="background:#ef6c00;"></span>Apollo</div>
+  </div>
+</section>
+
+<!-- ========== PORTFOLIO ========== -->
+<section class="portfolio" id="portfolio">
+  <div class="section-header reveal">
+    <div class="section-tag" data-i18n="portfolio_tag">سجل حافل</div>
+    <h2 data-i18n="portfolio_title">مشاريع وتركيبات</h2>
+    <p data-i18n="portfolio_desc">أنجزنا بنجاح أنظمة حماية من الحريق لمشاريع صناعية وتجارية وسكنية رائدة في جميع أنحاء مصر.</p>
+  </div>
+  <div class="portfolio-grid">
+    <div class="portfolio-card reveal">
+      <div class="portfolio-img">🏭</div>
+      <div class="portfolio-info">
+        <h3 data-i18n="proj_1_title">مصنع تصنيع صناعي</h3>
+        <p data-i18n="proj_1_desc">نظام إنذار حريق بالعناوين كامل، ونظام إخماد بالرغوة، وشبكة حنفيات لمصنع 25,000 م² في العاشر من رمضان.</p>
+        <div class="portfolio-tags"><span>Mircom</span><span>Tyco</span><span>الحماية المدنية</span></div>
+      </div>
+    </div>
+    <div class="portfolio-card reveal">
+      <div class="portfolio-img">🏢</div>
+      <div class="portfolio-info">
+        <h3 data-i18n="proj_2_title">مجمع مكاتب تجاري</h3>
+        <p data-i18n="proj_2_desc">نظام Notifier متعدد المناطق مع إنذار مبكر VESDA، وترقية رشاشات، وإخلاء صوتي طوارئ لبرج 12 طابق في القاهرة الجديدة.</p>
+        <div class="portfolio-tags"><span>Notifier</span><span>VESDA</span><span>EVAC</span></div>
+      </div>
+    </div>
+    <div class="portfolio-card reveal">
+      <div class="portfolio-img">🏥</div>
+      <div class="portfolio-info">
+        <h3 data-i18n="proj_3_title">منشأة صحية</h3>
+        <p data-i18n="proj_3_desc">حماية حريق متخصصة لمستشفى 200 سرير تشمل إخماد عامل نظيف لغرف الخوادم وأنظمة كشف لمناطق المرضى.</p>
+        <div class="portfolio-tags"><span>Hochiki</span><span>FM-200</span><span>Clean Agent</span></div>
+      </div>
+    </div>
+    <div class="portfolio-card reveal">
+      <div class="portfolio-img">🏗️</div>
+      <div class="portfolio-info">
+        <h3 data-i18n="proj_4_title">كمبوند سكني</h3>
+        <p data-i18n="proj_4_desc">بنية تحتية إطفاء متكاملة لـ 15 مبنى سكني تشمل محطة مضخات، أنابيب رأسية، خزائن خراطيم، وطفايات محمولة.</p>
+        <div class="portfolio-tags"><span>Rapidrop</span><span>Reliable</span><span>Turnkey</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CONTACT ========== -->
+<section class="contact" id="contact">
+  <div class="contact-grid">
+    <div class="contact-brand">
+      <!-- Logo in footer -->
+      <svg viewBox="0 0 200 240" width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="fl1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#142a5e"/>
+            <stop offset="100%" style="stop-color:#0a1a4a"/>
+          </linearGradient>
+        </defs>
+        <path d="M100 8 L185 48 V115 C185 168 100 232 100 232 C100 232 15 168 15 115 V48 L100 8Z" fill="url(#fl1)" stroke="#1a3a7a" stroke-width="2"/>
+        <path d="M100 32 L160 58 V108 C160 148 100 195 100 195 C100 195 40 148 40 108 V58 L100 32Z" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+        <rect x="85" y="52" width="30" height="10" rx="2" fill="#1a3a7a"/>
+        <rect x="90" y="42" width="20" height="10" rx="2" fill="#2a4a8a"/>
+        <rect x="92" y="65" width="16" height="8" rx="2" fill="#c41e1e"/>
+        <rect x="88" y="76" width="24" height="5" rx="2" fill="#1a3a7a"/>
+        <line x1="78" y1="88" x2="68" y2="102" stroke="#3d6fa0" stroke-width="1.8" stroke-dasharray="3 2" opacity="0.7"/>
+        <line x1="88" y1="88" x2="82" y2="108" stroke="#3d6fa0" stroke-width="1.8" stroke-dasharray="3 2" opacity="0.7"/>
+        <line x1="98" y1="88" x2="96" y2="112" stroke="#3d6fa0" stroke-width="1.8" stroke-dasharray="3 2" opacity="0.7"/>
+        <line x1="108" y1="88" x2="112" y2="112" stroke="#3d6fa0" stroke-width="1.8" stroke-dasharray="3 2" opacity="0.7"/>
+        <line x1="118" y1="88" x2="128" y2="108" stroke="#3d6fa0" stroke-width="1.8" stroke-dasharray="3 2" opacity="0.7"/>
+        <line x1="128" y1="88" x2="140" y2="102" stroke="#3d6fa0" stroke-width="1.8" stroke-dasharray="3 2" opacity="0.7"/>
+        <path d="M100 125 Q85 140 90 162 Q95 178 100 172 Q105 178 110 162 Q115 140 100 125Z" fill="#c41e1e"/>
+        <path d="M100 138 Q93 148 96 160 Q98 168 100 166 Q102 168 104 160 Q107 148 100 138Z" fill="#e04a4a"/>
+        <path d="M100 148 Q97 154 98 160 Q99 164 100 163 Q101 164 102 160 Q103 154 100 148Z" fill="#ff7a7a"/>
+      </svg>
+      <div>
+        <h3 data-i18n="footer_brand">أوشن تكنولوجي لأنظمة الحماية من الحريق</h3>
+        <p data-i18n="footer_desc">شريكك الموثوق لأنظمة الإنذار والإطفاء والسلامة في مصر. معتمدون، ذوو خبرة، ومتاحون 24/7.</p>
+      </div>
+    </div>
+    <div class="contact-col">
+      <h4 data-i18n="footer_services">الخدمات</h4>
+      <a href="#services" data-i18n="footer_svc_1">أنظمة إنذار الحريق</a>
+      <a href="#services" data-i18n="footer_svc_2">أنظمة الإطفاء</a>
+      <a href="#services" data-i18n="footer_svc_3">اعتماد الحماية المدنية</a>
+      <a href="#services" data-i18n="footer_svc_4">عقود الصيانة</a>
+    </div>
+    <div class="contact-col">
+      <h4 data-i18n="footer_products">المنتجات</h4>
+      <a href="#products" data-i18n="footer_prod_1">لوحات الإنذار</a>
+      <a href="#products" data-i18n="footer_prod_2">الرشاشات</a>
+      <a href="#products" data-i18n="footer_prod_3">مضخات الحريق</a>
+      <a href="#products" data-i18n="footer_prod_4">الطفايات</a>
+    </div>
+    <div class="contact-col">
+      <h4 data-i18n="footer_contact">تواصل معنا</h4>
+      <p><span data-i18n="footer_address_label">العنوان:</span><br><span data-i18n="footer_address">الأردنية، البترا مول، عمارة 1<br>العاشر من رمضان، مصر</span></p>
+      <a href="tel:+201090670570" class="contact-phone ltr-num">📞 +20 109 067 0570</a>
+      <a href="mailto:info@oceantech-eg.com" class="contact-phone">✉️ info@oceantech-eg.com</a>
+      <a href="https://wa.me/201090670570" target="_blank" class="contact-phone ltr-num" style="margin-top:0.5rem;">💬 WhatsApp: +20 109 067 0570</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p><span data-i18n="footer_copyright">© 2026 أوشن تكنولوجي. جميع الحقوق محفوظة.</span><span class="ltr-num"> | CR: العاشر من رمضان</span></p>
+  </div>
+</section>
+
+<!-- ========== EMERGENCY BOT ========== -->
+<div class="emergency-bot" id="emergencyBot">
+  <div class="emergency-tooltip" data-i18n="bot_tooltip">🚨 طلب طوارئ</div>
+  <button class="emergency-btn" onclick="openEmergencyModal()" title="Emergency">🚨</button>
+</div>
+
+<!-- ========== MODAL ========== -->
+<div class="modal-overlay" id="emergencyModal" onclick="closeEmergencyModal(event)">
+  <div class="modal" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeEmergencyModal()">✕</button>
+    <div class="modal-header">
+      <div class="icon">🚨</div>
+      <div>
+        <h3 data-i18n="modal_title">طلب صيانة طوارئ</h3>
+        <p data-i18n="modal_subtitle">أدخل بياناتك وسنرسل مهندساً فوراً.</p>
+      </div>
+    </div>
+    <form id="emergencyForm" onsubmit="handleEmergencySubmit(event)">
+      <div class="form-group">
+        <label for="facilityName" data-i18n="form_facility">اسم المنشأة / الشركة</label>
+        <input type="text" id="facilityName" required placeholder="مثال: مصنع ABC">
+      </div>
+      <div class="form-group">
+        <label for="issueType" data-i18n="form_issue">نوع العطل / الطلب</label>
+        <select id="issueType" required>
+          <option value="" data-i18n="form_select">-- اختر --</option>
+          <option value="عطل نظام إنذار" data-i18n="opt_alarm">عطل نظام إنذار الحريق</option>
+          <option value="تسرب رشاشات" data-i18n="opt_sprinkler">تسرب نظام الرشاشات</option>
+          <option value="عطل مضخة" data-i18n="opt_pump">عطل مضخة الحريق</option>
+          <option value="تفتيش حماية مدنية" data-i18n="opt_inspection">تفتيش الحماية المدنية</option>
+          <option value="تركيب جديد" data-i18n="opt_install">عرض سعر تركيب جديد</option>
+          <option value="عقد صيانة سنوي" data-i18n="opt_amc">عقد صيانة سنوي AMC</option>
+          <option value="طوارئ أخرى" data-i18n="opt_other">طوارئ أخرى</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="phoneNumber" data-i18n="form_phone">رقم الهاتف المباشر</label>
+        <input type="tel" id="phoneNumber" required placeholder="01x xxxx xxxx" pattern="[0-9+\s]{8,}">
+      </div>
+      <div class="form-group">
+        <label for="notes" data-i18n="form_notes">ملاحظات إضافية (اختياري)</label>
+        <textarea id="notes" rows="2" placeholder="أي تفاصيل عاجلة..."></textarea>
+      </div>
+      <button type="submit" class="modal-submit"><span data-i18n="form_submit">إرسال عبر واتساب</span> →</button>
+    </form>
+    <p class="modal-hint"><span data-i18n="modal_hint">سيتم إرسال الرسالة إلى</span><span class="ltr-num">+20 109 067 0570</span></p>
+  </div>
+</div>
+<script>
+const translations={
+  en:{
+    nav_tagline:"FIRE PROTECTION SYSTEMS",nav_home:"Home",nav_services:"Services",nav_products:"Products",nav_partners:"Partners",nav_portfolio:"Portfolio",nav_contact:"Contact",
+    hero_badge:"24/7 Emergency Response",hero_title:"Advanced <span class='highlight'>Fire Protection</span> Systems for Egypt",hero_desc:"Ocean Technology specializes in supplying, installing, and certifying fire alarm & fire fighting systems. Civil Defense compliance guaranteed for factories, offices, and commercial buildings across Egypt.",hero_cta_secondary:"Explore Services →",
+    stat_years:"Years",stat_projects:"Projects",stat_brands:"Brands",stat_compliance:"Compliance",
+    services_tag:"Our Expertise",services_title:"Comprehensive Fire Safety Solutions",services_desc:"From design to installation and Civil Defense approval — we handle every phase of your fire protection project with precision and certified expertise.",
+    svc_1_title:"Fire Alarm Systems",svc_1_desc:"Design, supply, and installation of addressable & conventional fire alarm control panels, detectors, and notification devices from Mircom, Notifier, and Hochiki.",
+    svc_2_title:"Fire Fighting Systems",svc_2_desc:"Complete wet & dry sprinkler systems, fire hose reels, hydrant networks, and foam systems engineered to NFPA and Egyptian Civil Defense standards.",
+    svc_3_title:"Fire Pumps & Stations",svc_3_desc:"UL/FM certified fire pumps, jockey pumps, and complete pump room installations with automatic control panels and flow testing.",
+    svc_4_title:"Civil Defense Approval",svc_4_desc:"End-to-end documentation, inspection coordination, and official certification from Egyptian Civil Defense authorities for all building types.",
+    svc_5_title:"Maintenance & AMC",svc_5_desc:"Annual Maintenance Contracts with 24/7 emergency response. Preventive inspections, system testing, and spare parts supply to keep your systems operational.",
+    svc_6_title:"Consulting & Design",svc_6_desc:"Fire safety engineering consultancy for new constructions and renovations. Hydraulic calculations, risk assessments, and code-compliant system design.",
+    products_tag:"Certified Equipment",products_title:"Approved Fire Protection Products",products_desc:"We supply and install globally certified fire safety equipment from the world's leading manufacturers, ensuring maximum reliability and compliance.",
+    prod_1_title:"Fire Alarm Control Panels",prod_1_desc:"Addressable & conventional panels from Mircom, Notifier, and Simplex with intelligent loop technology and touch-screen interfaces.",
+    prod_2_title:"Sprinkler Systems",prod_2_desc:"Pendant, upright, and sidewall sprinklers from Tyco, Reliable, and Rapidrop. K-factor optimized for every hazard classification.",
+    prod_3_title:"Fire Pumps & Controllers",prod_3_desc:"Diesel and electric fire pumps with automatic controllers, flow meters, and pressure maintenance systems for high-rise and industrial applications.",
+    prod_4_title:"Fire Extinguishers",prod_4_desc:"ABC powder, CO₂, foam, and water mist extinguishers in all capacities. Wall brackets, cabinets, and annual inspection tags included.",
+    prod_5_title:"Fire Hose Cabinets & Reels",prod_5_desc:"Surface and recessed fire hose cabinets, hose reels with brass nozzles, and landing valve assemblies for stairwell and corridor installation.",
+    prod_6_title:"Detection Devices",prod_6_desc:"Smoke, heat, beam, and flame detectors from Hochiki, Apollo, and Bavaria. VESDA aspirating systems for high-value asset protection.",
+    partners_tag:"Trusted Worldwide",partners_title:"Our Global Brand Partners",partners_desc:"We are authorized distributors and certified installers for the world's most respected fire protection manufacturers.",
+    portfolio_tag:"Proven Track Record",portfolio_title:"Projects & Installations",portfolio_desc:"Successfully delivered fire protection systems for leading industrial, commercial, and residential developments across Egypt.",
+    proj_1_title:"Industrial Manufacturing Plant",proj_1_desc:"Complete addressable fire alarm system, foam suppression, and hydrant network for a 25,000 m² factory in 10th of Ramadan City.",
+    proj_2_title:"Commercial Office Complex",proj_2_desc:"Multi-zone Notifier addressable system with VESDA early warning, sprinkler retrofit, and emergency voice evacuation for a 12-story tower in New Cairo.",
+    proj_3_title:"Healthcare Facility",proj_3_desc:"Specialized fire protection for a 200-bed hospital including clean-agent suppression for server rooms and patient-area detection systems.",
+    proj_4_title:"Residential Compound",proj_4_desc:"Turnkey fire fighting infrastructure for 15 residential buildings including pump station, risers, hose cabinets, and portable extinguishers.",
+    footer_brand:"Ocean Technology for Fire Protection Systems",footer_desc:"Your trusted partner for fire alarm, fire fighting, and life safety systems in Egypt. Certified, experienced, and available 24/7.",
+    footer_services:"Services",footer_svc_1:"Fire Alarm Systems",footer_svc_2:"Fire Fighting Systems",footer_svc_3:"Civil Defense Approval",footer_svc_4:"Maintenance Contracts",
+    footer_products:"Products",footer_prod_1:"Alarm Panels",footer_prod_2:"Sprinklers",footer_prod_3:"Fire Pumps",footer_prod_4:"Extinguishers",
+    footer_contact:"Contact",footer_address_label:"Address:",footer_address:"Al-Ardaweya, Petra Mall, Bldg 1<br>10th of Ramadan City, Egypt",footer_copyright:"© 2026 Ocean Technology. All Rights Reserved.",
+    bot_tooltip:"🚨 Emergency Request",modal_title:"Emergency Maintenance Request",modal_subtitle:"Fill in your details and we will dispatch an engineer immediately.",
+    form_facility:"Facility / Company Name",form_issue:"Issue / Request Type",form_select:"-- Select --",
+    opt_alarm:"Fire Alarm System Fault",opt_sprinkler:"Sprinkler System Leak",opt_pump:"Fire Pump Failure",opt_inspection:"Civil Defense Inspection",opt_install:"New Installation Quote",opt_amc:"Annual Maintenance Contract",opt_other:"Other Emergency",
+    form_phone:"Direct Phone Number",form_notes:"Additional Notes (Optional)",form_submit:"Send via WhatsApp",modal_hint:"Message will be sent to"
+  },
+  ar:{
+    nav_tagline:"أنظمة الحماية من الحريق",nav_home:"الرئيسية",nav_services:"الخدمات",nav_products:"المعدات",nav_partners:"الشركاء",nav_portfolio:"أعمالنا",nav_contact:"تواصل معنا",
+    hero_badge:"استجابة طوارئ 24/7",hero_title:"أنظمة <span class='highlight'>حماية متطورة</span> من الحريق في مصر",hero_desc:"تتخصص أوشن تكنولوجي في توريد وتركيب واعتماد أنظمة الإنذار والإطفاء. ضمان الالتزام باشتراطات الحماية المدنية للمصانع والمكاتب والمباني التجارية في جميع أنحاء مصر.",hero_cta_secondary:"استكشف خدماتنا →",
+    stat_years:"سنوات خبرة",stat_projects:"مشروع",stat_brands:"ماركات",stat_compliance:"التزام",
+    services_tag:"خبراتنا",services_title:"حلول شاملة للسلامة من الحريق",services_desc:"من التصميم إلى التركيب والاعتماد من الحماية المدنية — نتولى كل مراحل مشروع الحماية من الحريق بدقة وخبرة معتمدة.",
+    svc_1_title:"أنظمة إنذار الحريق",svc_1_desc:"تصميم وتوريد وتركيب لوحات إنذار العناوين والتقليدية، وأجهزة الكشف وأجهزة الإنذار من Mircom وNotifier وHochiki.",
+    svc_2_title:"أنظمة الإطفاء",svc_2_desc:"أنظمة رشاشات رطب وجاف، بكرات خراطيم الإطفاء، شبكات الحنفيات، وأنظمة الرغوة المصممة وفق معايير NFPA والحماية المدنية المصرية.",
+    svc_3_title:"مضخات الحريق والمحطات",svc_3_desc:"مضخات حريق معتمدة UL/FM، ومضخات الجوكي، وتركيبات كاملة لغرف المضخات مع لوحات تحكم أوتوماتيكية واختبارات التدفق.",
+    svc_4_title:"اعتماد الحماية المدنية",svc_4_desc:"توثيق شامل، وتنسيق التفتيش، والشهادات الرسمية من جهات الحماية المدنية المصرية لجميع أنواع المباني.",
+    svc_5_title:"الصيانة وعقود AMC",svc_5_desc:"عقود صيانة سنوية مع استجابة طوارئ 24/7. فحوصات وقائية، اختبارات الأنظمة، وتوريد قطع الغيار للحفاظ على تشغيل أنظمتك.",
+    svc_6_title:"الاستشارات والتصميم",svc_6_desc:"استشارات هندسة السلامة من الحريق للإنشاءات الجديدة والتجديدات. حسابات هيدروليكية، تقييم المخاطر، وتصميم أنظمة متوافقة مع الأكواد.",
+    products_tag:"معدات معتمدة",products_title:"منتجات حماية من الحريق معتمدة",products_desc:"نورد ونركب معدات السلامة من الحريق المعتمدة عالمياً من كبار المصنعين في العالم، مضمونة للموثوقية القصوى والامتثال.",
+    prod_1_title:"لوحات تحكم إنذار الحريق",prod_1_desc:"لوحات العناوين والتقليدية من Mircom وNotifier وSimplex بتقنية الحلقة الذكية وواجهات شاشات اللمس.",
+    prod_2_title:"أنظمة الرشاشات",prod_2_desc:"رشاشات معلقة ورأسية وجدارية من Tyco وReliable وRapidrop. معامل K مُحسّن لكل تصنيف مخاطر.",
+    prod_3_title:"مضخات الحريق ووحدات التحكم",prod_3_desc:"مضخات حريق ديزل وكهربائية مع وحدات تحكم أوتوماتيكية، وعدادات التدفق، وأنظمة الحفاظ على الضغط للمباني الشاهقة والتطبيقات الصناعية.",
+    prod_4_title:"طفايات الحريق",prod_4_desc:"طفايات بودرة ABC وCO₂ ورغوة ورذاذ ماء بجميع السعات. حوامل حائط، خزائن، وبطاقات فحص سنوي متضمنة.",
+    prod_5_title:"خزائن و بكرات خراطيم الحريق",prod_5_desc:"خزائن خراطيم سطحية ومغمورة، وبكرات خراطيم بفوهات نحاسية، ومجمعات صمامات الهبوط لتركيب السلالم والممرات.",
+    prod_6_title:"أجهزة الكشف",prod_6_desc:"أجهزة كشف الدخان والحرارة والشعاع واللهب من Hochiki وApollo وBavaria. أنظمة VESDA الشفطية لحماية الأصول عالية القيمة.",
+    partners_tag:"موثوق عالمياً",partners_title:"شركاؤنا العالميون",partners_desc:"نحن موزعون معتمدون ومركّبون معتمدون لأعرق مصنعي الحماية من الحريق في العالم.",
+    portfolio_tag:"سجل حافل",portfolio_title:"مشاريع وتركيبات",portfolio_desc:"أنجزنا بنجاح أنظمة حماية من الحريق لمشاريع صناعية وتجارية وسكنية رائدة في جميع أنحاء مصر.",
+    proj_1_title:"مصنع تصنيع صناعي",proj_1_desc:"نظام إنذار حريق بالعناوين كامل، ونظام إخماد بالرغوة، وشبكة حنفيات لمصنع 25,000 م² في العاشر من رمضان.",
+    proj_2_title:"مجمع مكاتب تجاري",proj_2_desc:"نظام Notifier متعدد المناطق مع إنذار مبكر VESDA، وترقية رشاشات، وإخلاء صوتي طوارئ لبرج 12 طابق في القاهرة الجديدة.",
+    proj_3_title:"منشأة صحية",proj_3_desc:"حماية حريق متخصصة لمستشفى 200 سرير تشمل إخماد عامل نظيف لغرف الخوادم وأنظمة كشف لمناطق المرضى.",
+    proj_4_title:"كمبوند سكني",proj_4_desc:"بنية تحتية إطفاء متكاملة لـ 15 مبنى سكني تشمل محطة مضخات، أنابيب رأسية، خزائن خراطيم، وطفايات محمولة.",
+    footer_brand:"أوشن تكنولوجي لأنظمة الحماية من الحريق",footer_desc:"شريكك الموثوق لأنظمة الإنذار والإطفاء والسلامة في مصر. معتمدون، ذوو خبرة، ومتاحون 24/7.",
+    footer_services:"الخدمات",footer_svc_1:"أنظمة إنذار الحريق",footer_svc_2:"أنظمة الإطفاء",footer_svc_3:"اعتماد الحماية المدنية",footer_svc_4:"عقود الصيانة",
+    footer_products:"المنتجات",footer_prod_1:"لوحات الإنذار",footer_prod_2:"الرشاشات",footer_prod_3:"مضخات الحريق",footer_prod_4:"الطفايات",
+    footer_contact:"تواصل معنا",footer_address_label:"العنوان:",footer_address:"الأردنية، البترا مول، عمارة 1<br>العاشر من رمضان، مصر",footer_copyright:"© 2026 أوشن تكنولوجي. جميع الحقوق محفوظة.",
+    bot_tooltip:"🚨 طلب طوارئ",modal_title:"طلب صيانة طوارئ",modal_subtitle:"أدخل بياناتك وسنرسل مهندساً فوراً.",
+    form_facility:"اسم المنشأة / الشركة",form_issue:"نوع العطل / الطلب",form_select:"-- اختر --",
+    opt_alarm:"عطل نظام إنذار الحريق",opt_sprinkler:"تسرب نظام الرشاشات",opt_pump:"عطل مضخة الحريق",opt_inspection:"تفتيش الحماية المدنية",opt_install:"عرض سعر تركيب جديد",opt_amc:"عقد صيانة سنوي AMC",opt_other:"طوارئ أخرى",
+    form_phone:"رقم الهاتف المباشر",form_notes:"ملاحظات إضافية (اختياري)",form_submit:"إرسال عبر واتساب",modal_hint:"سيتم إرسال الرسالة إلى"
+  }
+};
+
+let currentLang='ar';
+function toggleLanguage(){
+  const html=document.documentElement;
+  const btnIcon=document.getElementById('langIcon');
+  const btnLabel=document.getElementById('langLabel');
+  if(currentLang==='ar'){
+    currentLang='en';html.lang='en';html.dir='ltr';
+    btnIcon.textContent='🇸🇦';btnLabel.textContent='العربية';
+  }else{
+    currentLang='ar';html.lang='ar';html.dir='rtl';
+    btnIcon.textContent='🇬🇧';btnLabel.textContent='English';
+  }
+  updateContent(currentLang);
+}
+function updateContent(lang){
+  const t=translations[lang];
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const key=el.getAttribute('data-i18n');
+    if(t[key]){if(key.includes('title')||key.includes('desc')){el.innerHTML=t[key]}else{el.textContent=t[key]}}
+  });
+}
+
+const WHATSAPP_NUMBER="201090670570";
+function openEmergencyModal(){document.getElementById('emergencyModal').classList.add('active');document.body.style.overflow='hidden'}
+function closeEmergencyModal(event){if(!event||event.target===document.getElementById('emergencyModal')){document.getElementById('emergencyModal').classList.remove('active');document.body.style.overflow=''}}
+function handleEmergencySubmit(event){
+  event.preventDefault();
+  const facility=document.getElementById('facilityName').value.trim();
+  const issue=document.getElementById('issueType').value;
+  const phone=document.getElementById('phoneNumber').value.trim();
+  const notes=document.getElementById('notes').value.trim();
+  if(!facility||!issue||!phone)return;
+  const messages={
+    ar:`🚨 طلب صيانة واستشارة عاجلة 🚨\nالمنشأة: ${facility}\nالطلب: ${issue}\nالهاتف: ${phone}\n${notes?`ملاحظات: ${notes}\n`:''}مطلوب مهندس مختص فوراً لتلبية اشتراطات الحماية المدنية.`,
+    en:`🚨 Emergency Fire System Maintenance Request 🚨\nFacility: ${facility}\nIssue: ${issue}\nPhone: ${phone}\n${notes?`Notes: ${notes}\n`:''}Urgent engineer required for Civil Defense compliance.`
+  };
+  const message=encodeURIComponent(messages[currentLang]||messages.en);
+  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`,'_blank');
+  closeEmergencyModal();
+  document.getElementById('emergencyForm').reset();
+}
+
+function createParticles(){
+  const container=document.getElementById('particles');
+  if(!container)return;
+  for(let i=0;i<18;i++){
+    const p=document.createElement('div');
+    p.className='particle';
+    p.style.left=Math.random()*100+'%';
+    p.style.animationDelay=Math.random()*10+'s';
+    p.style.animationDuration=(7+Math.random()*5)+'s';
+    container.appendChild(p);
+  }
+}
+function initScrollReveal(){
+  const observer=new IntersectionObserver((entries)=>{entries.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add('visible')})},{threshold:0.1});
+  document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+}
+function initNavbarScroll(){
+  const navbar=document.getElementById('navbar');
+  window.addEventListener('scroll',()=>{
+    if(window.scrollY>50){navbar.style.background='rgba(10,26,74,0.97)';navbar.style.boxShadow='0 4px 30px rgba(10,26,74,0.12)'}
+    else{navbar.style.background='rgba(10,26,74,0.93)';navbar.style.boxShadow='none'}
+  });
+}
+function toggleMobileMenu(){
+  const nav=document.getElementById('navLinks');
+  const isOpen=nav.style.display==='flex';
+  nav.style.display=isOpen?'none':'flex';
+  if(!isOpen){
+    nav.style.position='absolute';nav.style.top='100%';nav.style.left='0';nav.style.right='0';
+    nav.style.flexDirection='column';nav.style.background='var(--logo-navy)';
+    nav.style.padding='1rem';nav.style.gap='1rem';nav.style.boxShadow='0 10px 30px rgba(0,0,0,0.2)';
+  }
+}
+document.addEventListener('DOMContentLoaded',()=>{
+  createParticles();initScrollReveal();initNavbarScroll();
+  document.addEventListener('keydown',(e)=>{if(e.key==='Escape')closeEmergencyModal()});
+});
+</script>
+
+</body>
+</html>
